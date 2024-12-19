@@ -1,8 +1,8 @@
-javaPrac
+# javaPrac
 
 Welcome to javaPrac! This repository is dedicated to all my Java practice code as I learn and grow my skills in Java programming. It's a personal learning space where I will explore various concepts, build small projects, and experiment with new ideas.
 
-Purpose
+# Purpose
 
 The primary goal of this repository is to:
 
@@ -14,7 +14,7 @@ Experiment with different Java features and frameworks.
 
 Solve problems and implement algorithms.
 
-Repository Structure
+# Repository Structure
 
 The repository will be organized as follows:
 
@@ -28,18 +28,16 @@ Advanced Topics: Code related to advanced topics such as multithreading, file I/
 
 Mini Projects: Small projects to apply and solidify my knowledge.
 
-How to Use
+# How to Use
 
 Feel free to browse through the repository to see my learning progress. If you find any mistakes or have suggestions for improvement, you're welcome to contribute or open an issue.
 
-Tools & Environment
+# Tools & Environment
 
 Programming Language: Java
 
-IDE/Editor: [Your preferred IDE or editor]
+IDE/Editor: [VS code]
 
-JDK Version: [Specify the version you are using]
-
-Disclaimer
+# Disclaimer
 
 This repository is for personal practice and learning. The code here may not always follow best practices or be production-ready. It's a work in progress and reflects my current understanding of Java.
