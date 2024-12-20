@@ -4,4 +4,4 @@ public class datatypes {
         int ans = a + b;
         System.out.println("ans: " +ans);
     }
-};
+}
