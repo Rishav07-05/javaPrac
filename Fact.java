@@ -12,24 +12,39 @@
 // }
 
 
-import java.util.*;
+// import java.util.*;
+// public class Fact {
+//     public static void main(String[] args){
+//         Scanner sc = new Scanner(System.in);
+//         System.out.println("Enter the number: ");
+//         int n = sc.nextInt();
+//         int a = sc.nextInt();
+//         int b = sc.nextInt();
+//         if (n > a && n > b) {
+//             System.out.println(n);
+//         }
+//         else if (a > n && a > b) {
+//             System.out.println(a);
+//         }
+//         else {
+//             System.out.println("greatest is : " + b);
+//         }
+//         sc.close();
+//     }
+// }
 
-public class Fact {
-    public static void main(String[] args){
+
+
+import java.util.*;
+public class Fact{
+    public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.println("Enter the number: ");
         int n = sc.nextInt();
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        if (n > a && n > b) {
-            System.out.println(n);
+        int fact = 1;
+        for (int i = 1; i <= n; i++) {
+            fact *= i;
         }
-        else if (a > n && a > b) {
-            System.out.println(a);
-        }
-        else {
-            System.out.println("greatest is : " + b);
-        }
+        System.out.println("factorial is: " + fact);
         sc.close();
     }
 }
