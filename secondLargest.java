@@ -10,6 +10,7 @@ public class secondLargest {
         }
         Arrays.sort(arr);
 
-        System.out.println(arr[n-2]);
+        System.out.println(arr[n - 2]);
+        sc.close();
     }
 }
