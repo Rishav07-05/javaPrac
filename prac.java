@@ -200,42 +200,76 @@
 
 
 
-class human {
-    void run() {
-        System.out.println("Human can run");
-    }
+// class human {
+//     void run() {
+//         System.out.println("Human can run");
+//     }
 
-    void walk() {
-        System.out.println("Human can walk");
-    }
+//     void walk() {
+//         System.out.println("Human can walk");
+//     }
 
-    void sleep() {
-        System.out.println("Human can sleep");
-    }
+//     void sleep() {
+//         System.out.println("Human can sleep");
+//     }
 
+// }
+
+// class boy extends human{
+//     void checkboy() {
+//         System.out.println("Im a boy");
+//     }
+// }
+
+// class girl  extends human{
+//     void checkgirl() {
+//         System.out.println("Im a girl");
+//     }
+// }
+// public class prac {
+//     public static void main(String[] args) {
+//         boy obj = new boy();
+//         girl obj1 = new girl();
+
+//         obj.checkboy();
+//         obj.walk();
+
+//         obj1.checkgirl();
+//         obj1.run();
+//     }
+// }
+
+
+
+// method overridding 
+
+import java.util.Scanner;
+
+class animal {
+    void eats(String food) {
+        System.out.println("Animal Eats: " + food);
+    }
 }
 
-class boy extends human{
-    void checkboy() {
-        System.out.println("Im a boy");
+class dog extends animal {
+    @Override
+    void eats(String food) {
+        System.out.println("Dog Eats: " + food );
     }
 }
 
-class girl  extends human{
-    void checkgirl() {
-        System.out.println("Im a girl");
-    }
-}
+
 public class prac {
     public static void main(String[] args) {
-        boy obj = new boy();
-        girl obj1 = new girl();
+        Scanner sc = new Scanner(System.in);
+        // String food = sc.nextLine();
 
-        obj.checkboy();
-        obj.walk();
+        dog obj = new dog();
+        animal obj1 = new animal();
+        
+        obj.eats("Meat");
+        obj1.eats("Grass");
 
-        obj1.checkgirl();
-        obj1.run();
+        sc.close();
     }
 }
-
