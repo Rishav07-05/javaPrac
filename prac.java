@@ -199,6 +199,8 @@
 
 
 
+// inheritance
+
 
 // class human {
 //     void run() {
@@ -243,33 +245,60 @@
 
 // method overridding 
 
-import java.util.Scanner;
+// import java.util.Scanner;
+
+// class animal {
+//     void eats(String food) {
+//         System.out.println("Animal Eats: " + food);
+//     }
+// }
+
+// class dog extends animal {
+//     @Override
+//     void eats(String food) {
+//         System.out.println("Dog Eats: " + food );
+//     }
+// }
+
+
+// public class prac {
+//     public static void main(String[] args) {
+//         Scanner sc = new Scanner(System.in);
+//         // String food = sc.nextLine();
+
+//         dog obj = new dog();
+//         animal obj1 = new animal();
+        
+//         obj.eats("Meat");
+//         obj1.eats("Grass");
+
+//         sc.close();
+//     }
+// }
+
+
+
+// super() keyword 
+
 
 class animal {
-    void eats(String food) {
-        System.out.println("Animal Eats: " + food);
-    }
+    String s = "animal sound";
 }
 
 class dog extends animal {
-    @Override
-    void eats(String food) {
-        System.out.println("Dog Eats: " + food );
+    String s = "barks";
+
+    void sound() {
+        System.out.println("Dog: " + s);
+        System.out.println("Animal: " + super.s);
     }
+    
 }
 
 
 public class prac {
     public static void main(String[] args) {
-        Scanner sc = new Scanner(System.in);
-        // String food = sc.nextLine();
-
         dog obj = new dog();
-        animal obj1 = new animal();
-        
-        obj.eats("Meat");
-        obj1.eats("Grass");
-
-        sc.close();
+        obj.sound();
     }
 }
