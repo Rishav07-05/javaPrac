@@ -281,24 +281,123 @@
 // super() keyword 
 
 
-class animal {
-    String s = "animal sound";
-}
+// for methods 
 
-class dog extends animal {
-    String s = "barks";
+// class animal {
+//     String s = "animal sound";
+// }
 
-    void sound() {
-        System.out.println("Dog: " + s);
-        System.out.println("Animal: " + super.s);
-    }
+// class dog extends animal {
+//     String s = "barks";
+
+//     void sound() {
+//         System.out.println("Dog: " + s);
+//         System.out.println("Animal: " + super.s);
+//     }
     
+// }
+
+
+// public class prac {
+//     public static void main(String[] args) {
+//         dog obj = new dog();
+//         obj.sound();
+//     }
+// }
+
+
+// for constructor
+
+
+// class animal {
+
+//     animal() {
+//         System.out.println("This is the constructor made in animal class");
+//     }
+
+//     void bark() {
+//         System.out.println("I bark");
+//     }
+// }
+
+// class dog extends animal {
+    
+//     dog() {
+//         super();
+//         System.out.println("Constructor made in dog class");
+//     }
+
+//     void dogSound()
+//     {
+//         super.bark();
+//     }
+// }
+
+
+
+// public class prac {
+
+//     public static void main(String[] args) {
+//         dog d = new dog();
+//         d.dogSound();
+//     }
+// }
+
+
+
+
+// toString()
+
+// class student {
+//     int id;
+//     String name;
+
+//     student(int id, String name) {
+//         this.id = id;
+//         this.name = name;
+//     }
+
+//     public String toString() {
+//         return id + " " + name;
+//     }
+// }
+
+// public class prac {
+
+//     public static void main(String[] args) {
+//         student obj = new student(2, "Rishav");
+//         System.out.println(obj);
+//     }
+// }
+
+
+
+
+// equals()
+
+
+class student {
+    int id;
+    String name;
+
+    student(int id, String name) {
+        this.id = id;
+        this.name = name;
+    }
+
+    public boolean equals(Object obj) {
+        student s = (student)obj;
+
+        return (this.id == s.id && this.name.equals(s.name));
+    }
 }
 
 
 public class prac {
+
     public static void main(String[] args) {
-        dog obj = new dog();
-        obj.sound();
+        student s1 = new student(2, "Rishav");
+        student s2 = new student(2, "Rishav");
+        System.out.println(s1.equals(s2));
     }
 }
