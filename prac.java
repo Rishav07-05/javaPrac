@@ -376,19 +376,49 @@
 // equals()
 
 
-class student {
-    int id;
-    String name;
+// class student {
+//     int id;
+//     String name;
 
-    student(int id, String name) {
-        this.id = id;
-        this.name = name;
+//     student(int id, String name) {
+//         this.id = id;
+//         this.name = name;
+//     }
+
+//     public boolean equals(Object obj) {
+//         student s = (student)obj;
+
+//         return (this.id == s.id && this.name.equals(s.name));
+//     }
+// }
+
+
+// public class prac {
+
+//     public static void main(String[] args) {
+//         student s1 = new student(2, "Rishav");
+//         student s2 = new student(2, "Rishav");
+//         System.out.println(s1.equals(s2));
+//     }
+// }
+
+
+
+
+// super & final 
+
+class animal {
+    final int speed = 69;
+
+    final void run() {
+        System.out.println("Animal speed is: " + speed);
     }
+}
 
-    public boolean equals(Object obj) {
-        student s = (student)obj;
-
-        return (this.id == s.id && this.name.equals(s.name));
+class dog extends animal {
+    void display() {
+        super.run();
+        System.out.println("Extended from the animal class");
     }
 }
 
@@ -396,8 +426,7 @@ class student {
 public class prac {
 
     public static void main(String[] args) {
-        student s1 = new student(2, "Rishav");
-        student s2 = new student(2, "Rishav");
-        System.out.println(s1.equals(s2));
+        dog obj = new dog();
+        obj.display();
     }
 }
