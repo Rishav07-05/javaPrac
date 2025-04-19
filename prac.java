@@ -153,45 +153,89 @@
 
 
 
-import java.util.*;
+// import java.util.*;
 
-class overloading {
-    int a, b, c;
-    int sum;
+// class overloading {
+//     int a, b, c;
+//     int sum;
 
-    int add(int a, int b) {
-        sum = a + b;
-        return sum;
+//     int add(int a, int b) {
+//         sum = a + b;
+//         return sum;
+//     }
+
+//     int add(int a, int b, int c) {
+//         sum = a + b + c;
+//         return sum;
+//     }
+
+
+//     void display() {
+//         System.out.println("The sum is: " + sum);
+//     }
+// }
+
+
+// public class prac {
+//     public static void main(String[] args) {
+        
+//         overloading obj = new overloading();
+
+//         Scanner sc = new Scanner(System.in);
+//         int a = sc.nextInt();
+//         int b = sc.nextInt();
+//         int c = sc.nextInt();
+        
+
+
+//         obj.add(a , b);
+//         obj.display();
+//         obj.add(a , b , c);
+//         obj.display();
+//         sc.close();
+//     }
+// }
+
+
+
+
+
+class human {
+    void run() {
+        System.out.println("Human can run");
     }
 
-    int add(int a, int b, int c) {
-        sum = a + b + c;
-        return sum;
+    void walk() {
+        System.out.println("Human can walk");
     }
 
+    void sleep() {
+        System.out.println("Human can sleep");
+    }
 
-    void display() {
-        System.out.println("The sum is: " + sum);
+}
+
+class boy extends human{
+    void checkboy() {
+        System.out.println("Im a boy");
     }
 }
 
-
+class girl  extends human{
+    void checkgirl() {
+        System.out.println("Im a girl");
+    }
+}
 public class prac {
     public static void main(String[] args) {
-        
-        overloading obj = new overloading();
+        boy obj = new boy();
+        girl obj1 = new girl();
 
-        Scanner sc = new Scanner(System.in);
-        int a = sc.nextInt();
-        int b = sc.nextInt();
-        int c = sc.nextInt();
-        
+        obj.checkboy();
+        obj.walk();
 
-
-        obj.add(a , b);
-        obj.display();
-        obj.add(a , b , c);
-        obj.display();
-        sc.close();
+        obj1.checkgirl();
+        obj1.run();
     }
 }
+
