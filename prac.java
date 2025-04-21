@@ -407,26 +407,137 @@
 
 // super & final 
 
-class animal {
-    final int speed = 69;
+// class animal {
+//     final int speed = 69;
 
-    final void run() {
-        System.out.println("Animal speed is: " + speed);
-    }
-}
+//     final void run() {
+//         System.out.println("Animal speed is: " + speed);
+//     }
+// }
 
-class dog extends animal {
-    void display() {
-        super.run();
-        System.out.println("Extended from the animal class");
-    }
-}
+// class dog extends animal {
+//     void display() {
+//         super.run();
+//         System.out.println("Extended from the animal class");
+//     }
+// }
 
+
+// public class prac {
+
+//     public static void main(String[] args) {
+//         dog obj = new dog();
+//         obj.display();
+//     }
+// }
+
+
+
+// instanceof 
+
+// class animal {
+
+// }
+
+// class dog extends animal {
+    
+// }
+
+// public class prac {
+
+//     public static void main(String[] args) {
+//         dog d = new dog();
+//         System.out.println(d instanceof animal);
+//         System.out.println(d instanceof dog);
+//         System.out.println(d instanceof Object);
+//     }
+// }
+
+
+
+// exception 
+
+
+
+// import java.util.*;
+
+// public class prac {
+
+//     public static void main(String[] args) {
+//         try {
+//             int res = 10 / 0;
+//         } catch (ArithmeticException e) {
+//             // TODO: handle exception
+//             System.out.println("This is the error");
+//         }
+//         finally {
+//             System.out.println("This is the final code");
+//         }
+//     }
+// }
+
+
+
+
+// public class prac {
+
+    
+//     static void Checkage(int age) throws Exception {
+//         if (age < 18) {
+//             throw new Exception("Underage");
+//         }
+//         else {
+//             System.out.println("Allowed");
+//         }
+//     }
+       
+//     public static void main(String[] args) {
+//         try {
+//             Checkage(100);
+//         } catch (Exception e) {
+//             System.out.println(e.getMessage());
+//         }
+//     }
+// }
+
+
+
+// multi catch 
+
+
+// public class prac {
+
+//     public static void main(String[] args) {
+//         try {
+//             int res = 10 / 0;
+//             int arr[] = new int[5];
+//             arr[5] = 10;
+
+//         } catch (ArrayIndexOutOfBoundsException | ArithmeticException e) {
+//             System.out.println("The error is: " + e);
+//         }
+//     }
+// }
+
+
+
+import java.io.IOException;
+import java.io.BufferedReader;
+import java.io.FileReader;
 
 public class prac {
 
     public static void main(String[] args) {
-        dog obj = new dog();
-        obj.display();
+        try(BufferedReader reader = new BufferedReader(new FileReader("input.txt"))) {
+            
+            String line;
+            while ((line = reader.readLine()) !=  null) {
+                System.out.println(line);
+            }
+
+
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
 }
