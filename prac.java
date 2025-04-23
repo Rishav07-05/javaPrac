@@ -576,25 +576,63 @@
 // image input output fileinputstream && fileoutputstream
 
 
-import java.io.*;
+// import java.io.*;
+// public class prac {
+
+//     public static void main(String[] args) {
+//         try {
+//             FileInputStream inputstream = new FileInputStream("output.txt");
+//             FileOutputStream outputstream = new FileOutputStream("input.txt");
+            
+//             int data;
+//             while ((data = inputstream.read()) != -1)  {
+//                 outputstream.write(data);
+//             }
+//             inputstream.close();
+//             outputstream.close();
+//             System.out.println("The file is copied");
+
+//         } catch (Exception e) {
+            
+//             e.printStackTrace();
+//         }
+//     }
+// }
+
+
+
+
+// generic classes
+
+
+
+// import java.util.*;
+
+
+class animal<r> {
+    private r val;
+
+    public void setValue(r val) {
+        this.val = val;
+    }
+
+    public r getValue() {
+        return val;
+    }
+
+}
+
+
 public class prac {
 
     public static void main(String[] args) {
-        try {
-            FileInputStream inputstream = new FileInputStream("output.txt");
-            FileOutputStream outputstream = new FileOutputStream("input.txt");
-            
-            int data;
-            while ((data = inputstream.read()) != -1)  {
-                outputstream.write(data);
-            }
-            inputstream.close();
-            outputstream.close();
-            System.out.println("The file is copied");
-
-        } catch (Exception e) {
-            
-            e.printStackTrace();
-        }
+        animal<Integer> obj = new animal<>();
+        obj.setValue(12);
+        System.out.println(obj.getValue());
+        
+        animal<String> obj1 = new animal<>();
+        obj1.setValue("This is generic class");
+        System.out.println(obj1.getValue());
     }
+
 }
