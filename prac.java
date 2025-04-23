@@ -505,19 +505,19 @@
 // multi catch 
 
 
-public class prac {
+// public class prac {
 
-    public static void main(String[] args) {
-        try {
-            int res = 10 / 0;
-            int arr[] = new int[5];
-            arr[5] = 10;
+//     public static void main(String[] args) {
+//         try {
+//             int res = 10 / 0;
+//             int arr[] = new int[5];
+//             arr[5] = 10;
 
-        } catch (ArrayIndexOutOfBoundsException | ArithmeticException e) {
-            System.out.println("The error is: " + e);
-        }
-    }
-}
+//         } catch (ArrayIndexOutOfBoundsException | ArithmeticException e) {
+//             System.out.println("The error is: " + e);
+//         }
+//     }
+// }
 
 
 
@@ -541,3 +541,29 @@ public class prac {
 //         }
 //     }
 // }
+
+
+
+
+
+
+
+import java.io.*;
+
+
+public class prac {
+
+    public static void main(String[] args) throws IOException {
+        FileWriter writer = new FileWriter("output.txt");
+        writer.write("This is my file to write");
+        writer.close();
+        
+        BufferedReader reader = new BufferedReader(new FileReader("output.txt"));
+        String line = reader.readLine();
+        if (line.startsWith("This")) {
+            System.out.println("It's working fine");
+        }
+        System.out.println(line);
+        reader.close();
+    }
+}
