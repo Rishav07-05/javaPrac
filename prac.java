@@ -609,30 +609,91 @@
 // import java.util.*;
 
 
-class animal<r> {
-    private r val;
+// class animal<r> {
+//     private r val;
 
-    public void setValue(r val) {
-        this.val = val;
+//     public void setValue(r val) {
+//         this.val = val;
+//     }
+
+//     public r getValue() {
+//         return val;
+//     }
+
+// }
+
+
+// public class prac {
+
+//     public static void main(String[] args) {
+//         animal<Integer> obj = new animal<>();
+//         obj.setValue(12);
+//         System.out.println(obj.getValue());
+        
+//         animal<String> obj1 = new animal<>();
+//         obj1.setValue("This is generic class");
+//         System.out.println(obj1.getValue());
+//     }
+
+// }
+
+
+
+
+
+// generic prac question
+
+
+// class animal<t> {
+//     private t name;
+
+//     public void setData(t name) {
+//         this.name = name;
+//     }
+
+//     public t getData() {
+//         return name;
+//     }
+
+// }
+
+
+// public class prac {
+
+//     public static void main(String[] args) {
+//         animal<Integer> obj = new animal<>();
+//         obj.setData(60);
+//         System.out.println("The speed is: " + obj.getData());
+        
+//         animal<String> obj1 = new animal<>();
+//         obj1.setData("sher");
+//         System.out.println("My name is: " + obj1.getData());
+//     }
+// }
+
+
+
+// bounded types 
+
+class animal<t extends Number> {
+    private t data;
+
+    public void set(t data) {
+        this.data = data;
     }
 
-    public r getValue() {
-        return val;
+    public t get() {
+        return data;
     }
-
 }
+
 
 
 public class prac {
 
     public static void main(String[] args) {
         animal<Integer> obj = new animal<>();
-        obj.setValue(12);
-        System.out.println(obj.getValue());
-        
-        animal<String> obj1 = new animal<>();
-        obj1.setValue("This is generic class");
-        System.out.println(obj1.getValue());
+        obj.set(12);
+        System.out.println(obj.get());
     }
-
 }
