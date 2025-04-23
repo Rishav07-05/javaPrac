@@ -546,24 +546,55 @@
 
 
 
+// read write file
+
+
+
+// import java.io.*;
+
+
+// public class prac {
+
+//     public static void main(String[] args) throws IOException {
+//         FileWriter writer = new FileWriter("output.txt");
+//         writer.write("This is my file to write");
+//         writer.close();
+        
+//         BufferedReader reader = new BufferedReader(new FileReader("output.txt"));
+//         String line = reader.readLine();
+//         if (line.startsWith("This")) {
+//             System.out.println("It's working fine");
+//         }
+//         System.out.println(line);
+//         reader.close();
+//     }
+// }
+
+
+
+
+// image input output fileinputstream && fileoutputstream
 
 
 import java.io.*;
-
-
 public class prac {
 
-    public static void main(String[] args) throws IOException {
-        FileWriter writer = new FileWriter("output.txt");
-        writer.write("This is my file to write");
-        writer.close();
-        
-        BufferedReader reader = new BufferedReader(new FileReader("output.txt"));
-        String line = reader.readLine();
-        if (line.startsWith("This")) {
-            System.out.println("It's working fine");
+    public static void main(String[] args) {
+        try {
+            FileInputStream inputstream = new FileInputStream("output.txt");
+            FileOutputStream outputstream = new FileOutputStream("input.txt");
+            
+            int data;
+            while ((data = inputstream.read()) != -1)  {
+                outputstream.write(data);
+            }
+            inputstream.close();
+            outputstream.close();
+            System.out.println("The file is copied");
+
+        } catch (Exception e) {
+            
+            e.printStackTrace();
         }
-        System.out.println(line);
-        reader.close();
     }
 }
