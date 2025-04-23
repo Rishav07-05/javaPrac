@@ -675,25 +675,52 @@
 
 // bounded types 
 
-class animal<t extends Number> {
-    private t data;
+// class animal<t extends Number> {
+//     private t data;
 
-    public void set(t data) {
-        this.data = data;
-    }
+//     public void set(t data) {
+//         this.data = data;
+//     }
 
-    public t get() {
-        return data;
-    }
-}
+//     public t get() {
+//         return data;
+//     }
+// }
 
+
+
+// public class prac {
+
+//     public static void main(String[] args) {
+//         animal<Integer> obj = new animal<>();
+//         obj.set(12);
+//         System.out.println(obj.get());
+//     }
+// }
+
+
+
+
+// wildcards
+
+
+import java.util.*;
 
 
 public class prac {
 
+    public static void print(List<?> list) {
+        for (Object num : list) {
+            System.out.print(num + " ");
+        }
+    }
+
     public static void main(String[] args) {
-        animal<Integer> obj = new animal<>();
-        obj.set(12);
-        System.out.println(obj.get());
+        List<Integer> intList = List.of(1, 2, 3);
+        List<String> stringList = List.of("a", "b", "c");
+
+        print(intList);
+        System.out.println("");
+        print(stringList);
     }
 }
