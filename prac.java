@@ -704,23 +704,23 @@
 // wildcards
 
 
-import java.util.*;
+// import java.util.*;
 
 
-public class prac {
+// public class prac {
 
-    public static void print(List<?> list) {
-        for (Object num : list) {
-            System.out.print(num + " ");
-        }
-    }
+//     public static void print(List<?> list) {
+//         for (Object num : list) {
+//             System.out.print(num + " ");
+//         }
+//     }
 
-    public static void main(String[] args) {
-        List<Integer> intList = List.of(1, 2, 3);
-        List<String> stringList = List.of("a", "b", "c");
+//     public static void main(String[] args) {
+//         List<Integer> intList = List.of(1, 2, 3);
+//         List<String> stringList = List.of("a", "b", "c");
 
-        print(intList);
-        System.out.println("");
-        print(stringList);
-    }
-}
+//         print(intList);
+//         System.out.println("");
+//         print(stringList);
+//     }
+// }
