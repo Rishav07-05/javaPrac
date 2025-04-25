@@ -766,3 +766,22 @@
 //         obj.fun();
 //     }
 // }
+
+
+
+// lambda expression 
+
+interface sumCalc {
+    int sum(int a, int b);
+}
+
+
+public class prac {
+
+    public static void main(String[] args) {
+        sumCalc obj = (a, b) -> a + b;
+        int ans = obj.sum(5, 10);
+        System.out.println(ans);
+    }
+
+}
