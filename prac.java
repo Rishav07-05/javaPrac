@@ -693,20 +693,76 @@
 
 // for static method 
 
-class Outer {
-    static class Inner {
-        void display() {
-            System.out.println("This is inner class");
-        }
-    }
-}
+// class Outer {
+//     static class Inner {
+//         void display() {
+//             System.out.println("This is inner class");
+//         }
+//     }
+// }
 
-public class prac {
+// public class prac {
 
-    public static void main(String[] args) {
+//     public static void main(String[] args) {
         
-        Outer.Inner obj = new Outer.Inner();
-        obj.display();
+//         Outer.Inner obj = new Outer.Inner();
+//         obj.display();
         
-    }
-}
+//     }
+// }
+
+
+
+
+// Anonymous and local class 
+
+
+// Local 
+
+
+// class outer {
+//     public void outerFun() {
+//         System.out.println("hello outer");
+//         class inner {
+//             public void innerFun() {
+//                 System.out.println("hello inner");
+//             }
+//         }
+//         inner obj = new inner();
+//         obj.innerFun();
+//     }
+// }
+
+
+
+
+// public class prac {
+
+//     public static void main(String[] args) {
+//         outer obj = new outer();
+//         obj.outerFun();
+//     }
+// }
+
+
+
+
+// Anonymous 
+
+
+// abstract class inner {
+//     abstract void fun();
+// }
+
+
+// public class prac {
+
+//     public static void main(String[] args) {
+//         inner obj = new inner(){
+//             void fun(){
+//                 System.out.println("This is all about anonymous class");
+//             }
+//         };
+//         obj.fun();
+//     }
+// }
