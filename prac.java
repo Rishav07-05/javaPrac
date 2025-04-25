@@ -1,18 +1,22 @@
 // import java.util.Scanner;
 
-
 // enum Day {
 //     MONDAY, TUESDAY, WEDNESDAY, THRUSDAY, FRIDAY, SATURDAY, SUNDAY
 // }
 
 // public class prac {
+//     String day;
+
+//     prac(String day) {
+//         this.day = day;
+//     }
 
 //     public static void printfun(Day day) {
 //         if (day == Day.MONDAY) {
 //             System.out.println("Its a working day" + day);
 //         }
 //     }
-    
+
 //     public static void main(String[] args) {
 //         Scanner sc = new Scanner(System.in);
 //         System.out.println("enter your day");
@@ -24,10 +28,6 @@
 //         sc.close();
 //     }
 // }
-
-
-
-
 
 // import java.util.*;
 
@@ -56,15 +56,10 @@
 //         LEVEL level = LEVEL.valueOf(input); // string to enums conversion 
 
 //         printLevel(level);
-        
+
 //         sc.close();
 //     }
 // }
-
-
-
-
-
 
 // import java.util.*;
 
@@ -116,9 +111,6 @@
 //     }
 // }
 
-
-
-
 // import java.util.*;
 
 // class Car {
@@ -129,7 +121,6 @@
 //         this.brand = brand;
 //         this.year = year;
 //     }
-
 
 //     void display() {
 //         System.out.println("Brand: " + brand + " year:  " + year);
@@ -143,17 +134,13 @@
 //         int year = sc.nextInt();
 
 //         Car myCar = new Car(brand , year);
-        
-//         myCar.display();
 
+//         myCar.display();
+//         sc.close();
 //     }
 // }
 
-
-
-
-
-// import java.util.*;
+// import java.util.Scanner;
 
 // class overloading {
 //     int a, b, c;
@@ -169,24 +156,20 @@
 //         return sum;
 //     }
 
-
 //     void display() {
 //         System.out.println("The sum is: " + sum);
 //     }
 // }
 
-
 // public class prac {
 //     public static void main(String[] args) {
-        
+
 //         overloading obj = new overloading();
 
 //         Scanner sc = new Scanner(System.in);
 //         int a = sc.nextInt();
 //         int b = sc.nextInt();
 //         int c = sc.nextInt();
-        
-
 
 //         obj.add(a , b);
 //         obj.display();
@@ -196,11 +179,7 @@
 //     }
 // }
 
-
-
-
 // inheritance
-
 
 // class human {
 //     void run() {
@@ -241,8 +220,6 @@
 //     }
 // }
 
-
-
 // method overridding 
 
 // import java.util.Scanner;
@@ -260,7 +237,6 @@
 //     }
 // }
 
-
 // public class prac {
 //     public static void main(String[] args) {
 //         Scanner sc = new Scanner(System.in);
@@ -268,7 +244,7 @@
 
 //         dog obj = new dog();
 //         animal obj1 = new animal();
-        
+
 //         obj.eats("Meat");
 //         obj1.eats("Grass");
 
@@ -276,10 +252,7 @@
 //     }
 // }
 
-
-
 // super() keyword 
-
 
 // for methods 
 
@@ -294,9 +267,8 @@
 //         System.out.println("Dog: " + s);
 //         System.out.println("Animal: " + super.s);
 //     }
-    
-// }
 
+// }
 
 // public class prac {
 //     public static void main(String[] args) {
@@ -305,9 +277,7 @@
 //     }
 // }
 
-
 // for constructor
-
 
 // class animal {
 
@@ -321,10 +291,9 @@
 // }
 
 // class dog extends animal {
-    
+
 //     dog() {
-//         super();
-//         System.out.println("Constructor made in dog class");
+//         super();//         System.out.println("Constructor made in dog class");
 //     }
 
 //     void dogSound()
@@ -333,8 +302,6 @@
 //     }
 // }
 
-
-
 // public class prac {
 
 //     public static void main(String[] args) {
@@ -342,9 +309,6 @@
 //         d.dogSound();
 //     }
 // }
-
-
-
 
 // toString()
 
@@ -370,11 +334,7 @@
 //     }
 // }
 
-
-
-
 // equals()
-
 
 // class student {
 //     int id;
@@ -392,7 +352,6 @@
 //     }
 // }
 
-
 // public class prac {
 
 //     public static void main(String[] args) {
@@ -401,9 +360,6 @@
 //         System.out.println(s1.equals(s2));
 //     }
 // }
-
-
-
 
 // super & final 
 
@@ -422,7 +378,6 @@
 //     }
 // }
 
-
 // public class prac {
 
 //     public static void main(String[] args) {
@@ -431,8 +386,6 @@
 //     }
 // }
 
-
-
 // instanceof 
 
 // class animal {
@@ -440,7 +393,7 @@
 // }
 
 // class dog extends animal {
-    
+
 // }
 
 // public class prac {
@@ -453,11 +406,7 @@
 //     }
 // }
 
-
-
 // exception 
-
-
 
 // import java.util.*;
 
@@ -476,12 +425,8 @@
 //     }
 // }
 
-
-
-
 // public class prac {
 
-    
 //     static void Checkage(int age) throws Exception {
 //         if (age < 18) {
 //             throw new Exception("Underage");
@@ -490,7 +435,7 @@
 //             System.out.println("Allowed");
 //         }
 //     }
-       
+
 //     public static void main(String[] args) {
 //         try {
 //             Checkage(100);
@@ -500,10 +445,7 @@
 //     }
 // }
 
-
-
 // multi catch 
-
 
 // public class prac {
 
@@ -519,8 +461,6 @@
 //     }
 // }
 
-
-
 // import java.io.IOException;
 // import java.io.BufferedReader;
 // import java.io.FileReader;
@@ -529,12 +469,11 @@
 
 //     public static void main(String[] args) {
 //         try(BufferedReader reader = new BufferedReader(new FileReader("input.txt"))) {
-            
+
 //             String line;
 //             while ((line = reader.readLine()) !=  null) {
 //                 System.out.println(line);
 //             }
-
 
 //         } catch (IOException e) {
 //             e.printStackTrace();
@@ -542,16 +481,9 @@
 //     }
 // }
 
-
-
-
-
 // read write file
 
-
-
 // import java.io.*;
-
 
 // public class prac {
 
@@ -559,7 +491,7 @@
 //         FileWriter writer = new FileWriter("output.txt");
 //         writer.write("This is my file to write");
 //         writer.close();
-        
+
 //         BufferedReader reader = new BufferedReader(new FileReader("output.txt"));
 //         String line = reader.readLine();
 //         if (line.startsWith("This")) {
@@ -570,11 +502,7 @@
 //     }
 // }
 
-
-
-
 // image input output fileinputstream && fileoutputstream
-
 
 // import java.io.*;
 // public class prac {
@@ -583,7 +511,7 @@
 //         try {
 //             FileInputStream inputstream = new FileInputStream("output.txt");
 //             FileOutputStream outputstream = new FileOutputStream("input.txt");
-            
+
 //             int data;
 //             while ((data = inputstream.read()) != -1)  {
 //                 outputstream.write(data);
@@ -593,21 +521,15 @@
 //             System.out.println("The file is copied");
 
 //         } catch (Exception e) {
-            
+
 //             e.printStackTrace();
 //         }
 //     }
 // }
 
-
-
-
 // generic classes
 
-
-
 // import java.util.*;
-
 
 // class animal<r> {
 //     private r val;
@@ -622,14 +544,13 @@
 
 // }
 
-
 // public class prac {
 
 //     public static void main(String[] args) {
 //         animal<Integer> obj = new animal<>();
 //         obj.setValue(12);
 //         System.out.println(obj.getValue());
-        
+
 //         animal<String> obj1 = new animal<>();
 //         obj1.setValue("This is generic class");
 //         System.out.println(obj1.getValue());
@@ -637,12 +558,7 @@
 
 // }
 
-
-
-
-
 // generic prac question
-
 
 // class animal<t> {
 //     private t name;
@@ -657,21 +573,18 @@
 
 // }
 
-
 // public class prac {
 
 //     public static void main(String[] args) {
 //         animal<Integer> obj = new animal<>();
 //         obj.setData(60);
 //         System.out.println("The speed is: " + obj.getData());
-        
+
 //         animal<String> obj1 = new animal<>();
 //         obj1.setData("sher");
 //         System.out.println("My name is: " + obj1.getData());
 //     }
 // }
-
-
 
 // bounded types 
 
@@ -687,8 +600,6 @@
 //     }
 // }
 
-
-
 // public class prac {
 
 //     public static void main(String[] args) {
@@ -698,14 +609,9 @@
 //     }
 // }
 
-
-
-
 // wildcards
 
-
 // import java.util.*;
-
 
 // public class prac {
 
@@ -724,3 +630,83 @@
 //         print(stringList);
 //     }
 // }
+
+// single inheritance
+// class animal {
+//     void sound() {
+//         System.out.println("Animal sound");
+//     }
+// }
+
+// class dog extends animal {
+//     // void sound() {
+//     //     System.out.println("Dog sound");
+//     // }
+// }
+
+// public class prac {
+
+//     public static void main(String[] args) {
+//         dog obj = new dog();
+//         obj.sound();
+//     }
+// }
+
+// abstract class Animal {
+//     abstract void makeSound();
+// }
+
+// class Dog extends Animal {
+//     void makeSound() {
+//         System.out.println("Dog sound");
+//     }
+// }
+
+// public class prac {
+
+//     public static void main(String[] args) {
+//         Animal animal = new Dog();
+//         animal.makeSound();
+//     }
+// }
+
+// nested class
+
+// non static
+
+// class Outer {
+//     class Inner {
+//         void display() {
+//             System.out.println("This is inner class");
+//         }
+//     }
+// }
+
+// public class prac {
+
+//     public static void main(String[] args) {
+//         Outer outer = new Outer();
+//         Outer.Inner inner = outer.new Inner();
+//         inner.display();
+//     }
+// }
+
+// for static method 
+
+class Outer {
+    static class Inner {
+        void display() {
+            System.out.println("This is inner class");
+        }
+    }
+}
+
+public class prac {
+
+    public static void main(String[] args) {
+        
+        Outer.Inner obj = new Outer.Inner();
+        obj.display();
+        
+    }
+}
