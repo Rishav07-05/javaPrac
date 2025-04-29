@@ -769,7 +769,7 @@
 
 
 
-// lambda expression 
+// lambda expression and some forms and question of it 
 
 // interface sumCalc {
 //     int sum(int a, int b);
