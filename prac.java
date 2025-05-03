@@ -704,21 +704,16 @@
 // public class prac {
 
 //     public static void main(String[] args) {
-        
+
 //         Outer.Inner obj = new Outer.Inner();
 //         obj.display();
-        
+
 //     }
 // }
 
-
-
-
 // Anonymous and local class 
 
-
 // Local 
-
 
 // class outer {
 //     public void outerFun() {
@@ -733,9 +728,6 @@
 //     }
 // }
 
-
-
-
 // public class prac {
 
 //     public static void main(String[] args) {
@@ -744,16 +736,11 @@
 //     }
 // }
 
-
-
-
 // Anonymous 
-
 
 // abstract class inner {
 //     abstract void fun();
 // }
-
 
 // public class prac {
 
@@ -767,14 +754,11 @@
 //     }
 // }
 
-
-
 // lambda expression and some forms and question of it 
 
 // interface sumCalc {
 //     int sum(int a, int b);
 // }
-
 
 // public class prac {
 
@@ -786,6 +770,105 @@
 
 // }
 
+// import java.util.Scanner;
+
+// public class prac {
+//     // You are using Java
+//     public static void main(String[] args) {
+//         //Type your code here
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+//         int[] arr = new int[n];
+//         int store = 0;
+//         boolean found = false;
+
+//         for(int i = 0; i < n; i++){
+//             arr[i] = sc.nextInt();
+//         }
+
+//         for(int i = 0; i < arr.length - 1; i++){
+//             if(arr[i] == arr[i + 1]){
+//                 store = arr[i];
+//                 found = true;
+//                 break;
+//             }
+
+//         }
+
+//         if(found == true){
+//             System.out.println(store);
+//         }
+
+//         else{
+//             System.out.println("No repeated element found in the array");
+
+//         }
+
+//         sc.close();
+//     }
+// }
+
+// import java.util.*;
+// public class prac {
+
+//     public static void main(String[] args) {
+//         List<String> arr = new ArrayList<>();
+//         Scanner sc = new Scanner(System.in);
+//         int n = sc.nextInt();
+//         sc.nextLine();
+//         for(int i = 0; i < n; i++){
+//             String s = sc.nextLine();
+//             arr.add(s);
+//         }
+//         Collections.sort(arr , Collections.reverseOrder());
+//         for (String i : arr) {
+//             System.out.println(i);
+//         }
+//     }
+// }
 
 
 
+
+// import java.util.*;
+
+// public class prac {
+//     public static void main(String[] args) {
+//         // Create HashMap to store string-integer pairs
+//         Map<String, Integer> frequencyMap = new HashMap<>();
+//         Scanner scanner = new Scanner(System.in);
+
+//         // Get number of entries
+//         System.out.print("Enter number of entries: ");
+//         int n = scanner.nextInt();
+//         scanner.nextLine(); // Consume newline
+
+//         // Input key-value pairs
+//         System.out.println("Enter " + n + " key-value pairs (string followed by integer):");
+//         for (int i = 0; i < n; i++) {
+//             System.out.print("Pair " + (i + 1) + ": ");
+//             String key = scanner.next();
+//             int value = scanner.nextInt();
+//             scanner.nextLine(); // Consume newline
+
+//             frequencyMap.put(key, value);
+//         }
+
+//         // Display the map contents
+//         System.out.println("\nMap contents:");
+//         for (Map.Entry<String, Integer> entry : frequencyMap.entrySet()) {
+//             System.out.println(entry.getKey() + " => " + entry.getValue());
+//         }
+
+//         // Additional operations
+//         System.out.print("\nEnter a key to search: ");
+//         String searchKey = scanner.nextLine();
+//         if (frequencyMap.containsKey(searchKey)) {
+//             System.out.println("Value found: " + frequencyMap.get(searchKey));
+//         } else {
+//             System.out.println("Key not found");
+//         }
+
+//         scanner.close();
+//     }
+// }
